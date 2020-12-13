@@ -1,0 +1,27 @@
+.addForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.errorMsg {
+    color: red;
+    font-weight: bold;
+}
+
+.btnAdd {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}
