@@ -92,7 +92,7 @@ function UserEdit(props) {
     return (
         <form className='addForm' onSubmit={handleSubmit}>
             <label htmlFor='addEmail'>Электронный адрес:</label>
-            <input id='addEmail' className={emailValid ? '' : 'invalid'} type='text' required onChange={handleChangeEmail}></input>
+            <input id='addEmail' className={emailValid ? '' : 'invalid'} type='email' required onChange={handleChangeEmail}></input>
             {emailValid ? '' : <div className='errorMsg'>Неверный формат email!</div>}
             <label htmlFor='addPassword'>Пароль</label>
             <input id='addPassword' className={passwordValid ? '' : 'invalid'} type='text' required onChange={handleChangePassword}></input>
@@ -100,7 +100,7 @@ function UserEdit(props) {
             <label htmlFor='addFullname'>ФИО</label>
             <input id='addFullname' type='text' onChange={(e) => setFullName(e.target.value)}></input>
             <label htmlFor='addTelephone'>Телефон</label>
-            <input id='addTelephone' className={telephoneValid ? '' : 'invalid'} type='text' onChange={handleChangeTelephone}></input>
+            <input id='addTelephone' className={telephoneValid ? '' : 'invalid'} type='tel' onChange={handleChangeTelephone}></input>
             {telephoneValid ? '' : <div className='errorMsg'>Неверный формат телефона!</div>}
             <label htmlFor='addStatus'>Статус пользовтеля:</label>
             <select id='addStatus' onChange={(e) => setUserStatus(e.target.value)}>
